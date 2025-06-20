@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Personal Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/pic.jpeg" alt="VIJAYAKUMAR S" />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="VIJAYAKUMAR S">VIJAYAKUMAR S</h1>
+            <p class="title">ML Engineer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:vijaystack.dev@gmail.com" class="contact-link">vijaystack.dev@gmail.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919488955846" class="contact-link">+91 9488955846</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Malappuram - Kerala</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="index.html">About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="resume.html">Resume</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="portfolio.html">Portfolio</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="blog.html">Blog</a></li>
+            <li class="navbar-item"><a class="navbar-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact Content -->
+        <article class="contact active" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964591.1820295857!2d75.79521360350668!3d10.997567800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65c27384322cd%3A0x20b0ff8a07fd11d!2sMalappuram%2C%20Kerala!5e0!3m2!1sen!2sin!4v1688899999999"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="https://formspree.io/f/xwpbnoky" method="POST" class="form">
+            <div class="input-wrapper">
+                <input type="text" name="name" class="form-input" placeholder="Full name" required />
+                <input type="email" name="email" class="form-input" placeholder="Email address" required />
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+            </form>
+
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
