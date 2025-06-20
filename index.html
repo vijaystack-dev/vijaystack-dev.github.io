@@ -2,27 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vijay's Portfolio</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
-    h1 {
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #e6f0fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .left img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .right {
+      flex: 2;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h1 {
       font-size: 3em;
       color: #2c3e50;
     }
-    p {
-      font-size: 1.2em;
+
+    .right h2 {
+      font-size: 1.5em;
+      color: #2980b9;
+      margin-top: 0.5em;
+    }
+
+    .right p {
+      font-size: 1.1em;
+      margin-top: 1.2em;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right, .left {
+        padding: 2rem;
+      }
+
+      .right h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Vijay 👋</h1>
-  <p>Welcome to my portfolio page hosted on GitHub Pages!</p>
+
+  <div class="container">
+    <div class="left">
+      <!-- Replace the src below with your profile image path -->
+      <img src="https://via.placeholder.com/300" alt="Vijay Profile" />
+    </div>
+    <div class="right">
+      <h1>Hi, I'm Vijay</h1>
+      <h2>Tech Enthusiast | Developer | Creator</h2>
+      <p>
+        I build things on the web. Passionate about coding, building projects, and learning new technologies. Welcome to my portfolio site where I showcase my work and ideas.
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>
